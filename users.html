@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="topbar.css">
+    <link rel="stylesheet" href="users.css">
+    <title>Kafene</title>
+</head>
+<body>
+    <header>
+        <div id="topbar-container">
+            <div id="top-left">
+                <div id="logo-section">
+                    <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo" id="logo-image"/>
+                    <p>Kafene</p>
+                </div>
+                <nav id="menu-section">
+                    <a href="./orders.html" class="menu-items">Orders</a>
+                    <a href="./products.html" class="menu-items">Products</a>
+                    <a href="./users.html" class="menu-items active">Users</a>
+                </nav>
+            </div>
+            <div id="top-right">
+                <p id="logout-btn">Logout</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Users</h1>
+        <form id="search-bar">
+            <input type="search" id="search-input" placeholder="Search by Name">
+            <input type="reset" id="reset-btn">
+        </form>
+        <section id="user-list">
+            <table id="user-table">
+                <tr>                        
+                    <th>ID</th>
+                    <th>User Avatar	</th>
+                    <th>Full Name	</th>
+                    <th>DoB </th>
+                    <th>Gender</th>                        
+                    <th>Current Location
+                    </th>                        
+                </tr>
+                <tbody id="user-body">
+                    <!-- <tr>
+                        <td id="id" class="grey-text">1	</td>                    
+                        <td id="profilePic"><img src="https://robohash.org/estinvoluptas.jpg?size=50x50&set=set1" /></td>                    
+                        <td id="fullName" class="grey-text">Clementius McGillreich		</td>                    
+                        <td id="dob">14 Aug, 2012	</td>                    
+                        <td id="gender" class="grey-text">Male		</td> 
+                        <td id="location" class="grey-text">Bayambang, Philippines</td> 
+                    </tr> -->
+                    
+                </tbody>
+                <tbody id="search-body">
+                    <!-- search results -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="./users.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="topbar.css">
+    <link rel="stylesheet" href="orders.css">
+    <title>Kafene</title>
+</head>
+<body>
+    <header>
+        <div id="topbar-container">
+            <div id="top-left">
+                <div id="logo-section">
+                    <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo" id="logo-image"/>
+                    <p>Kafene</p>
+                </div>
+                <nav id="menu-section">
+                    <a href="./orders.html" class="menu-items active">Orders</a>
+                    <a href="./products.html" class="menu-items">Products</a>
+                    <a href="./users.html" class="menu-items">Users</a>
+                </nav>
+            </div>
+            <div id="top-right">
+                <p id="logout-btn">Logout</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Orders</h1>
+        <div id="filter-wrapper">
+            <section id="filters">
+                <h3>Filters</h3>
+                <p>Count: 100</p>
+                <input type="checkbox" id="new" name="new" value="New" checked>
+                <label for="new"> New</label><br>
+                <input type="checkbox" id="packed" name="packed" value="packed" checked>
+                <label for="packed"> Packed</label><br>
+                <input type="checkbox" id="transit" name="transit" value="Transit" checked>
+                <label for="transit">Transit</label><br>
+                <input type="checkbox" id="delivered" name="delivered" value="Delivered" checked>
+                <label for="delivered">Delivered</label><br><br>
+            </section>
+            <section id="order-list">
+                <table id="order-table">
+                    <tr>                        
+                        <th>ID</th>
+                        <th>Customer</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>                        
+                    </tr>
+                    <tbody id="order-body">
+                        <!-- <tr>
+                            <td id="order-id" class="grey-text">714-69-5617	</td>                    
+                            <td id="customer">Sally Whebell		</td>                    
+                            <td id="date">07 Aug, 2020 <br /><p class="grey-text">2:29 AM</p>	</td>                    
+                            <td id="amount" class="grey-text">$634.2	</td>                    
+                            <td id="status">Delivered	</td> 
+                        </tr> -->
+                        
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>    
+    <script src="./orders.js"></script>
+</body>
+</html>

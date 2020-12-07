@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="topbar.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Kafene</title>
+</head>
+<body>
+    <header>
+        <div id="topbar-container">
+            <div id="top-left">
+                <div id="logo-section">
+                    <img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="Logo" id="logo-image"/>
+                    <p>Kafene</p>
+                </div>
+                <nav id="menu-section">
+                    <a href="./orders.html" id="menu-items">Orders</a>
+                    <a href="./products.html" id="menu-items">Products</a>
+                    <a href="./users.html" id="menu-items">Users</a>
+                </nav>
+            </div>
+            <!-- <div id="top-right">
+                <p id="logout-btn">Logout</p>
+            </div> -->
+        </div>
+    </header>
+    <main>
+        <div>
+            <form id="login-form">
+                <h1>Sign In</h1>
+                <input class="form-element" type="text" name="username" placeholder="Enter Username">
+                <input class="form-element" type="password" name="password" placeholder="Enter Password">
+                <input class="submit-btn" type="submit" value="Login">
+            </form>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
